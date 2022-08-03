@@ -73,6 +73,5 @@ while tentativa == True:
         print("You typed wrong, try again!\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         tentativa = True
 
-
 print("The End.")
 
