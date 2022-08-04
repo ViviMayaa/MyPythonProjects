@@ -14,4 +14,3 @@ print(f"Each person should pay: ${round(result, 2)}")
 #or with 00
 result = "{:.2f}".format(result)
 print(f"Each person should pay: ${result}")
-

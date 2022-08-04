@@ -1,6 +1,7 @@
+
 def story_reader():
     with open("Story", "r") as story_draft:
-        # story_list = story_draft.read().split("\\")
+        # story_list=story_draft.read().split("\\")
         story_list = [[]]
         i = 0
         for element in story_draft.read():
