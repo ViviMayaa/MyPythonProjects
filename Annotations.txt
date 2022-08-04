@@ -1,2 +1,2 @@
 print() -> function
-
+len()(1-50) starts counting from 1, not 0, so when put in a array (0-49) use minus 1 inside: array[len() - 1]
