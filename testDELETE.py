@@ -1,11 +1,7 @@
-#🚨Don'tchangethecodebelow👇
-student_heights=input("Inputalistofstudentheights").split()
-forninrange(0,len(student_heights)):
-student_heights[n]=int(student_heights[n])
-#🚨Don'tchangethecodeabove👆
-
-
-#Writeyourcodebelowthisrow👇
-
-
-print(student_heights)
+import string
+wrong_attempt_format = False
+word_attempt ='2'
+print(string.punctuation)
+for i, elements in enumerate(string.digits or string.punctuation):
+    if word_attempt == elements:
+        wrong_attempt_format = True
