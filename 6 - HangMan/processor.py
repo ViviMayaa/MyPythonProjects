@@ -101,6 +101,7 @@ def word_attempt_format_check(attempts_tried, word_attempt):
 
     return wrong_attempt_format
 
+hang_man_game()
 
 play_again = input("Want to play again? Yes or no?\n").lower().strip()
 if play_again == 'yes':
@@ -110,4 +111,4 @@ else:
     quit()
 
 
-hang_man_game()
+
