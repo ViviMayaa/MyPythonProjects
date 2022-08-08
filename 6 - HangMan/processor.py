@@ -11,7 +11,7 @@ def hang_man_game():
     random_word = WordListReader.random_word()
 
     # cheating to test
-    print(random_word)
+    # print(random_word)
     lines_random_word = words_lines(random_word)
     hang_base()
     attempts_tried = []
@@ -92,7 +92,7 @@ def word_attempt_format_check(attempts_tried, word_attempt):
     not_allowed_elements = string.digits + string.punctuation
     for i, elements in enumerate(not_allowed_elements):
         if word_attempt == elements:
-            print("Word is not a letter, try again.")
+            print("Word attempted is not a letter, try again.")
             wrong_attempt_format = True
             break
     if word_attempt.strip() == "":
@@ -100,6 +100,7 @@ def word_attempt_format_check(attempts_tried, word_attempt):
         wrong_attempt_format = True
 
     return wrong_attempt_format
+
 
 hang_man_game()
 

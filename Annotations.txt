@@ -3,3 +3,8 @@ print()->function
 len()(1-50) starts counting from 1, not 0, so when putin an array(0-49) use minus 1 inside:array[len()-1]
 
 print(' '.join(map(str, variable_name))) -- printing list as string on screen
+
+we pass the argument as a parameter: my_function(argument) -> def my_function(parameter)
+
+Positional Argument : my_function(argument_position_one, argument_position_two)
+Keyword Argument : my_function(paramenter_name = argument_position_one, paramenter_name = argument_position_two)

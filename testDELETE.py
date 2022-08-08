@@ -1,7 +1,12 @@
-import string
-wrong_attempt_format = False
-word_attempt ='2'
-print(string.punctuation)
-for i, elements in enumerate(string.digits or string.punctuation):
-    if word_attempt == elements:
-        wrong_attempt_format = True
+number = 4
+
+number_list = [2, 3, 4, 5, 6, 7, 8, 9]
+if number % number == 0 and number % 1 == 0:
+    for element_number_list in number_list:
+        if number % element_number_list == 0 and element_number_list != number:
+            print("It's not a prime number.")
+            quit()
+
+    print("It's a prime number.")
+else:
+    print("It's not a prime number.")
