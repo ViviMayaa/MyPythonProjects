@@ -8,3 +8,7 @@ we pass the argument as a parameter: my_function(argument) -> def my_function(pa
 
 Positional Argument : my_function(argument_position_one, argument_position_two)
 Keyword Argument : my_function(paramenter_name = argument_position_one, paramenter_name = argument_position_two)
+
+Docstring = returns an explanation for the function == def function(): """first line"""
+
+List Comprehension = play_again = True if answer_play_again == 'Y' or answer_play_again == "YES" else False
