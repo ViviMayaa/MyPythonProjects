@@ -12,3 +12,5 @@ Keyword Argument : my_function(paramenter_name = argument_position_one, parament
 Docstring = returns an explanation for the function == def function(): """first line"""
 
 List Comprehension = play_again = True if answer_play_again == 'Y' or answer_play_again == "YES" else False
+
+All caps in global variable points that it would and should not be changed, such as PI = 3.1415. URL = "www...."
