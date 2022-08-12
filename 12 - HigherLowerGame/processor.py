@@ -11,14 +11,10 @@ def start():
     score = 0
     if option_a == option_b:
         option_b = random.choice(game_data.data)
-    first_try = True
-    game(option_a, option_b, first_try, score)
+    game(option_a, option_b, score)
 
 
-def game(option_a, option_b, first_try, score):
-    if not first_try:
-        option_a = option_b
-        option_b = random.choice(game_data.data)
+def game(option_a, option_b, score):
 
     print(f"Compare A: {option_a['name']}, a {option_a['description']} from {option_a['country']}.")
     print(art.vs)
@@ -33,13 +29,14 @@ def game(option_a, option_b, first_try, score):
         opponent = option_a
     else:
         print('Please type a available input. ')
-        game(option_a, option_b, first_try, score)
+        game(option_a, option_b, score)
 
     if player_choice['follower_count'] > opponent['follower_count']:
         score += 1
         print(f"You're right! Current score: {score}\n")
-        first_try = False
-        game(option_a, option_b, first_try, score)
+        option_a = option_b
+        option_b = random.choice(game_data.data)
+        game(option_a, option_b, score)
 
     else:
         print("You got it wrong! ")
