@@ -24,10 +24,14 @@ def coffee_machine():
         coffee_machine()
 
     print("Please insert coins.")
-    coins_quarter = int(input("How many quarters? "))
-    coins_dimes = int(input("How many dimes? "))
-    coins_nickles = int(input("How many nickles? "))
-    coins_pennies = int(input("How many pennies? "))
+    try:
+        coins_quarter = int(input("How many quarters? "))
+        coins_dimes = int(input("How many dimes? "))
+        coins_nickles = int(input("How many nickles? "))
+        coins_pennies = int(input("How many pennies? "))
+    except ValueError:
+        print("Invalid value input, please type the number of coins")
+        coffee_machine()
 
     money_change = price_check(coins_quarter, coins_dimes, coins_nickles, coins_pennies, user_choice)
     if money_change != 0:
