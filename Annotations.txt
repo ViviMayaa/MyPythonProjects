@@ -16,3 +16,5 @@ List Comprehension = play_again = True if answer_play_again == 'Y' or answer_pla
 All caps in global variable points that it would and should not be changed, such as PI = 3.1415. URL = "www...."
 
 Pascal Case => CarBlueprint, snake_case
+
+HigherOrderFunction = a function that calls another function: calculator(2,3,divide) -> def calculator (n1,n2, func) -> def divide
