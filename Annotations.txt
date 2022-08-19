@@ -18,3 +18,5 @@ All caps in global variable points that it would and should not be changed, such
 Pascal Case => CarBlueprint, snake_case
 
 HigherOrderFunction = a function that calls another function: calculator(2,3,divide) -> def calculator (n1,n2, func) -> def divide
+
+Slicing => piano_keys = [a,b,c,d] - wants only c,d,e => piano_kets = [2:5] [starts, stops(does not get included), step], -1 inverst the list [::-1]

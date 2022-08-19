@@ -40,7 +40,7 @@ def start_position():
 
 
 def move_forward(turt):
-    turt.forward(random.randint(1, 5))
+    turt.forward(random.randint(1, 10))
 
 
 def random_speed():
