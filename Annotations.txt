@@ -20,3 +20,10 @@ Pascal Case => CarBlueprint, snake_case
 HigherOrderFunction = a function that calls another function: calculator(2,3,divide) -> def calculator (n1,n2, func) -> def divide
 
 Slicing => piano_keys = [a,b,c,d] - wants only c,d,e => piano_kets = [2:5] [starts, stops(does not get included), step], -1 inverst the list [::-1]
+
+Documents Paths ./ foward, ../ backwards -> if txt is further in the working folder,
+use ./Project/talk.ppt to search inside, upwards(back) is ../report.doc
+--with open('/Users/vivi_/OneDrive/Área de Trabalho/testing.txt', 'r') as doc:print(doc.read())--
+as '../../Área de Trabalho/testing.txt
+
+
