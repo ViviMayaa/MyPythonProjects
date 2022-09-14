@@ -15,11 +15,18 @@ with open("50_states.csv") as states_csv_panda:
 # turtle.onscreenclick(get_mouse_click_coor)
 game_is_on = True
 score = 0
+missing_answer_list = [element for element in states_csv.state]
 while game_is_on:
     screen.title(f'U.S. States Image {score}/{len(states_csv.state)}')
     answer_state = screen.textinput(title="Guess the State: ", prompt="What's another state's name?").title().strip()
+    if answer_state == "Exit":
+        game_is_on = False
+        break
     if [states_csv[states_csv.state == answer_state] != states_csv.empty]:
         correct_answer = states_csv[states_csv.state == answer_state]
+        for states in missing_answer_list:
+            if states == answer_state:
+                missing_answer_list.remove(states)
         score += 1
         text = turtle.Turtle()
         text.penup()
@@ -33,6 +40,11 @@ while game_is_on:
         text.goto(0, 0)
         text.write("You've got them all, congrats!", move=False, align="center", font=("Arial", 18, "bold"))
         game_is_on = False
+
+
+print(f"You have missed these {len(missing_answer_list)} states: \n {[element for element in missing_answer_list]}")
+
+
 turtle.mainloop()
 
 

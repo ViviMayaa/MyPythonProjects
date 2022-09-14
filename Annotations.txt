@@ -7,7 +7,7 @@ print(' '.join(map(str, variable_name))) -- printing list as string on screen
 we pass the argument as a parameter: my_function(argument) -> def my_function(parameter)
 
 Positional Argument : my_function(argument_position_one, argument_position_two)
-Keyword Argument : my_function(paramenter_name = argument_position_one, paramenter_name = argument_position_two)
+Keyword Argument : my_function(parameter_name = argument_position_one, parameter_name = argument_position_two)
 
 Docstring = returns an explanation for the function == def function(): """first line"""
 
@@ -19,11 +19,18 @@ Pascal Case => CarBlueprint, snake_case
 
 HigherOrderFunction = a function that calls another function: calculator(2,3,divide) -> def calculator (n1,n2, func) -> def divide
 
-Slicing => piano_keys = [a,b,c,d] - wants only c,d,e => piano_kets = [2:5] [starts, stops(does not get included), step], -1 inverst the list [::-1]
+Slicing => piano_keys = [a,b,c,d] - wants only c,d,e => piano_keys = [2:5] [starts, stops(does not get included), step], -1 inverst the list [::-1]
 
-Documents Paths ./ foward, ../ backwards -> if txt is further in the working folder,
+Documents Paths ./ forward, ../ backwards -> if txt is further in the working folder,
 use ./Project/talk.ppt to search inside, upwards(back) is ../report.doc
 --with open('/Users/vivi_/OneDrive/Área de Trabalho/testing.txt', 'r') as doc:print(doc.read())--
 as '../../Área de Trabalho/testing.txt
 
+to search if a string exists inside another use if / in: result = [int(number) for number in number2 if number in number1]
 
+to take words off a string use split: result = {word:len(word) for word in sentence.split() }
+for word in sentence.split():
+    print(word)
+
+*args -> allows any number of positional arguments == def add(*args) -- add(5,2,3,5...)
+**kwargs -> allows any number of positional arguments == def calc(**kwargs) -- calc(number1= 81, number2= 82 ...)

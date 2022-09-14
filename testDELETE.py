@@ -1,2 +1,12 @@
-with open('../../Área de Trabalho/testing.txt', 'r') as doc:
-    print(doc.read())
+import tkinter
+
+window = tkinter.Tk()
+window.title("My first GUI")
+window.minsize(width=500, height=300)
+
+
+
+
+
+
+window.mainloop()
