@@ -1,12 +1,4 @@
-import tkinter
-
-window = tkinter.Tk()
-window.title("My first GUI")
-window.minsize(width=500, height=300)
-
-
-
-
-
-
-window.mainloop()
+import random
+import string
+test = random.choice(string.octdigits)
+print(string.octdigits)
