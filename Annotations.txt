@@ -34,3 +34,5 @@ for word in sentence.split():
 
 *args -> allows any number of positional arguments == def add(*args) -- add(5,2,3,5...)
 **kwargs -> allows any number of positional arguments == def calc(**kwargs) -- calc(number1= 81, number2= 82 ...)
+
+Dynamic Typing -> when you are able to change the values and type of variable, such as a = 10 to a = "hello"
