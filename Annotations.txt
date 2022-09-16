@@ -12,6 +12,9 @@ Keyword Argument : my_function(parameter_name = argument_position_one, parameter
 Docstring = returns an explanation for the function == def function(): """first line"""
 
 List Comprehension = play_again = True if answer_play_again == 'Y' or answer_play_again == "YES" else False
+Dictionary Comprehension =  {row.letter: row.code for (index, row) in nato_dict_frame.iterrows()}
+letter,code
+A,Alfa
 
 All caps in global variable points that it would and should not be changed, such as PI = 3.1415. URL = "www...."
 
@@ -36,3 +39,5 @@ for word in sentence.split():
 **kwargs -> allows any number of positional arguments == def calc(**kwargs) -- calc(number1= 81, number2= 82 ...)
 
 Dynamic Typing -> when you are able to change the values and type of variable, such as a = 10 to a = "hello"
+
+Json(25 project) - similar to dictionaries and lists : write: json.dump() , read: json.load(), update: json.update()
