@@ -3,7 +3,7 @@ import string
 import random
 from tkinter import messagebox
 import json
-import ast
+# import ast
 
 created_password = ''
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
@@ -29,7 +29,6 @@ def generate_password():
 
 
 def save():
-    file_formatted = {}
     if password_entry.get() != "":
         file_formatted = {
             website_entry.get():
@@ -111,8 +110,6 @@ def search_data():
         messagebox.showinfo(title="Error", message="There is no file.")
 
 
-    print(type(text_dict))
-
 # ---------------------------- UI SETUP ------------------------------- #
 
 
@@ -145,13 +142,13 @@ password_entry.grid(column=1, row=3)
 password_entry.insert(END, created_password)
 
 
-password_button = Button(text="Generate Password", command=generate_password, width= 15)
+password_button = Button(text="Generate Password", command=generate_password, width=15)
 password_button.grid(column=3, row=3)
 
 add_button = Button(text="Add", width=36, command=save)
 add_button.grid(column=1, row=4, columnspan=2)
 
-search_buttom = Button(text="Search", width= 15, command=search_data)
-search_buttom.grid(column=3, row=1, columnspan=3)
+search_button = Button(text="Search", width=15, command=search_data)
+search_button.grid(column=3, row=1, columnspan=3)
 
 window.mainloop()
