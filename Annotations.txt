@@ -41,3 +41,5 @@ for word in sentence.split():
 Dynamic Typing -> when you are able to change the values and type of variable, such as a = 10 to a = "hello"
 
 Json(25 project) - similar to dictionaries and lists : write: json.dump() , read: json.load(), update: json.update()
+
+API -Application Programming Interface, endpoint is the location (url) where you send your request
