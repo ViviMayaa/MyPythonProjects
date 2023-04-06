@@ -1,0 +1,14 @@
+Stonks API documentation from https://www.alphavantage.co/
+API key is: G1J76GY3JTZNSPHN
+
+--API Parameters-- function, symbol, apikey
+❚ Required: function
+The time series of your choice. In this case, function=TIME_SERIES_DAILY_ADJUSTED
+
+❚ Required: symbol
+The name of the equity of your choice. For example: symbol=IBM
+
+❚ Required: apikey
+Your API key. Claim your free API key here.
+
+API example: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=demo

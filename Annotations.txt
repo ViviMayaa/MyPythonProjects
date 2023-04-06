@@ -40,6 +40,14 @@ for word in sentence.split():
 
 Dynamic Typing -> when you are able to change the values and type of variable, such as a = 10 to a = "hello"
 
-Json(25 project) - similar to dictionaries and lists : write: json.dump() , read: json.load(), update: json.update()
+Json(25 project) - similar to dictionaries and lists : write: json.dump() ,json.dumps(to print) read: json.load(), update: json.update()
 
 API -Application Programming Interface, endpoint is the location (url) where you send your request
+
+Slice: [start:stop], don't forget that stop is the total -1 (want all 11 data? Put 12 on stop)
+
+Testing request post, @mock.patch(request.post) mock_data.return_value.status_code = 200 // mock_data.return_value.json.return_value = ""
+
+lambda_processor -> lambda_function
+
+Take key out of Dictionary: list(dictionary_name.keys())
