@@ -15,6 +15,7 @@ List Comprehension = play_again = True if answer_play_again == 'Y' or answer_pla
 Dictionary Comprehension =  {row.letter: row.code for (index, row) in nato_dict_frame.iterrows()}
 letter,code
 A,Alfa
+example with key/value dictionary: [value for (key,value) in data(items()]
 
 All caps in global variable points that it would and should not be changed, such as PI = 3.1415. URL = "www...."
 
@@ -51,3 +52,6 @@ Testing request post, @mock.patch(request.post) mock_data.return_value.status_co
 lambda_processor -> lambda_function
 
 Take key out of Dictionary: list(dictionary_name.keys())
+
+abs() returns positive value
+
