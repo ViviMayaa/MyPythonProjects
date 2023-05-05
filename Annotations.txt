@@ -55,3 +55,18 @@ Take key out of Dictionary: list(dictionary_name.keys())
 
 abs() returns positive value
 
+Limit the number of houses after the dot .
+print(f"{total/3:,.1f}")
+
+---------------------------CLASS BASE-------------------------
+CAREFUL WITH INIT != INT
+---Calling class---
+from managing_graph import ManagingData
+update_request = ManagingData(USER_NAME=USER_NAME, USER_TOKEN=USER_TOKEN, GRAPH_ID=GRAPH_ID )
+---building class---
+class ManagingData:
+    def __init__(self, USER_NAME):
+        self.user_id =USER_NAME
+
+    def updtating_graph(self):
+        endpoint = f'https://pixe.la/v1/users/{self.user_id}/graphs/{self.graph_id}'
